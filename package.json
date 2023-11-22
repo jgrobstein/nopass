@@ -1,0 +1,13 @@
+{
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.10.3",
+    "crypto-js": "^4.2.0",
+    "parcel": "^2.10.3",
+    "uikit": "^3.17.9"
+  }
+}

@@ -1,0 +1,46 @@
+<!--
+ ___    ____                  _               
+|_ _|  / ___|  ___ _ ____   _(_) ___ ___  ___ 
+ | |   \___ \ / _ \ '__\ \ / / |/ __/ _ \/ __|
+ | |    ___) |  __/ |   \ V /| | (_|  __/\__ \
+|___|  |____/ \___|_|    \_/ |_|\___\___||___/
+            ...when IT matters!				
+                                                
+https://iservicesinc.com https://iservicesinc.net
+Copyright 2023 I Services, Inc. All rights reserved.
+-->
+<!doctype html>
+<html>
+<head>
+    <title>NoPass</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@jgrobstein">
+    <link rel="stylesheet" href="styles.scss">
+</head>
+<body>
+    <header class="uk-container uk-width-large uk-margin-auto">
+        <h1 class="uk-heading-large uk-text-center">NoPass</h1>
+    </header>
+    <content class="uk-padding">
+        <div class="uk-container uk-width-large uk-margin-auto">
+            <form method="post">
+                <label for="site">Website</label>
+                <input class="uk-input" type="text" name="site" id="site" placeholder="https://example.com" autocomplete="url" />
+                <label for="pass">Password</label>
+                <input class="uk-input" type="password" name="pass" id="pass" placeholder="Password" autocomplete="new-password" />
+                <label for="length">Length</label>
+                <input class="uk-input" type="number" name="length" id="length" value="14" />
+                <label for="counter">Counter</label>
+                <input class="uk-input" type="number" name="counter" id="counter" value="0" />
+            </form>
+            <button id="getpass" class="uk-button uk-width-1-1 uk-margin">Generate Password</button>
+            <p class="uk-text-center uk-text-lead uk-text-wrap" id="password"></p>
+        </div>
+    </content>
+    <footer>
+    </footer>
+    <script src="nopass.js" type="module"></script>
+</body>
+</html>
