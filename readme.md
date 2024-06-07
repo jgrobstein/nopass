@@ -16,7 +16,7 @@ Enter a website and seed phrase, adjust the length and counter as desired and ge
 
 ## 📷 Screenshots
 
-![Screenshot](source/imgs/screenshot-home.png)
+![Screenshot](src/imgs/screenshot-home.png)
 
 
 ## 🛠️ Prerequisites
