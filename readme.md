@@ -1,29 +1,30 @@
+![Logo](src/imgs/icon-192.png)
+
 NoPass
 ------
 
 A simple password manager alternative that eliminates the need to store passwords.
 
-[ [How does it work](#how-does-it-work) ]
+[ [How it works](#how-it-works) ]
 [ [Screenshots](#screenshots) ]
 [ [Prerequisites](#prerequisites) ]
-[ [Features](#features) ]
 [ [Getting started](#getting-started) ]
 [ [License](#license) ]
 
-## How it works:
+## How it works
 
 Enter a website and seed phrase, adjust the length and counter as desired and generate a unique password that can be regenerated at any time using a pure js function.
 
-## 📷 Screenshots
+## Screenshots
 
 ![Screenshot](src/imgs/screenshot-home.png)
 
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 [Node, npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-## 🚀 Getting started
+## Getting started
 
 #### Install the dependencies
 
@@ -45,6 +46,6 @@ The project should be available at http://localhost:1234.
 
 To generate a production bundle of your project run `npm run build`, your build will be created in a `dist` directory.
 
-## 📝 License
+## License
 
 Copyright 2023 I Services. [MIT License](LICENSE.md)
