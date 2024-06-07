@@ -1,16 +1,16 @@
 {
   "source": "src/index.html",
   "targets": {
-      "frontend": {
-          "source": [
-              "src/index.html"
-          ],
-          "distDir": "build"
-      }
+    "frontend": {
+      "source": [
+        "src/index.html"
+      ],
+      "distDir": "build"
+    }
   },
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
+    "build": "parcel build && gulp",
     "clean:build": "rd /S /Q build",
     "clean:cache": "rd /S /Q .parcel-cache",
     "clean:dist": "rd /S /Q dist",
@@ -25,6 +25,7 @@
     "@parcel/transformer-sass": "2.10.3",
     "@parcel/transformer-webmanifest": "^2.10.3",
     "crypto-js": "^4.2.0",
+    "gulp": "^5.0.0",
     "parcel": "^2.10.3",
     "sharp": "^0.31.3",
     "uikit": "^3.17.9"
