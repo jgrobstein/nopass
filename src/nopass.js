@@ -3,15 +3,10 @@ import Base64 from 'crypto-js/enc-base64';
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
 
-// loads the Icon plugin
 UIkit.use(Icons);
 
-// components can be called from the imported UIkit reference
-// UIkit.notification('Hello world.');
-
-
 var site = document.querySelector('#site');
-var pass = document.querySelector('#pass');
+var pass = document.querySelector('#seed');
 var counter = document.querySelector('#counter');
 var length = document.querySelector('#length');
 var button = document.querySelector('#getpass');
@@ -33,3 +28,9 @@ function getPass() {
     console.log(password);
     document.querySelector('#password').innerHTML = password;
 }
+
+
+navigator.serviceWorker.register(
+    new URL('sw.js', import.meta.url),
+    {type: 'module'}
+);

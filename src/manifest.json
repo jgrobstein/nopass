@@ -1,0 +1,56 @@
+{
+  "id": "/?source=pwa",
+  "name": "NoPass",
+  "short_name": "nopass",
+  "description": "A simple password manager alternative that eliminates the need to store passwords.",
+  "theme_color": "#222222",
+  "background_color": "#222222",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "./imgs/favicon.ico?as=webp&width=32&height=32",
+      "type": "image/webp",
+      "sizes": "32x32"
+    },
+    {
+      "src": "./imgs/icon-192.png?as=webp&width=192&height=192",
+      "type": "image/webp",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./imgs/icon-192-maskable.png?as=webp&width=192&height=192",
+      "type": "image/webp",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./imgs/icon-512.png?as=webp&width=512&height=512",
+      "type": "image/webp",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./imgs/icon-512-maskable.png?as=webp&width=512&height=512",
+      "type": "image/webp",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots" : [
+    {
+      "src": "imgs/screenshot-home.png?as=webp&width=1575&height=984",
+      "sizes": "1873x979",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Homescreen"
+    },
+    {
+      "src": "imgs/screenshot-home-mobile.png?as=webp&width=720&height=1480",
+      "sizes": "720x1480",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Homescreen"
+    }
+  ]
+}

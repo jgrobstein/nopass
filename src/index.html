@@ -17,30 +17,32 @@ Copyright 2023 I Services, Inc. All rights reserved.
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="@jgrobstein">
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./imgs/apple-touch-icon.png?as=png&width=512&height=512">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.scss">
 </head>
-<body>
-    <header class="uk-container uk-width-large uk-margin-auto">
-        <h1 class="uk-heading-large uk-text-center">NoPass</h1>
-    </header>
-    <content class="uk-padding">
-        <div class="uk-container uk-width-large uk-margin-auto">
-            <form method="post">
-                <label for="site">Website</label>
-                <input class="uk-input" type="text" name="site" id="site" placeholder="https://example.com" autocomplete="url" />
-                <label for="pass">Password</label>
-                <input class="uk-input" type="password" name="pass" id="pass" placeholder="Password" autocomplete="new-password" />
-                <label for="length">Length</label>
-                <input class="uk-input" type="number" name="length" id="length" value="14" />
-                <label for="counter">Counter</label>
-                <input class="uk-input" type="number" name="counter" id="counter" value="0" />
-            </form>
-            <button id="getpass" class="uk-button uk-width-1-1 uk-margin">Generate Password</button>
-            <p class="uk-text-center uk-text-lead uk-text-wrap" id="password"></p>
-        </div>
+<body class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-background-cover" style="background-image: url(https://source.unsplash.com/random/?Security);">
+    <content class="uk-card uk-card-secondary uk-card-body uk-border-rounded uk-width-large">
+        <header class="uk-text-center">
+            <h1 class="uk-heading-small uk-margin-remove-top"><span uk-icon="icon: lock; ratio: 3"></span><br/>NoPass</h1>
+        </header>
+        <form method="post">
+            <label for="site">Website</label>
+            <input class="uk-input" type="text" name="site" id="site" placeholder="https://example.com" autocomplete="url" />
+            <label for="seed">Seed</label>
+            <input class="uk-input" type="password" name="seed" id="seed" placeholder="Passphrase" autocomplete="new-password" />
+            <label for="length">Length</label>
+            <input class="uk-input" type="number" name="length" id="length" value="14" max="44"/>
+            <label for="counter">Counter</label>
+            <input class="uk-input" type="number" name="counter" id="counter" value="0" min="0"/>
+        </form>
+        <button id="getpass" class="uk-button uk-button-primary uk-width-1-1 uk-margin">Generate Password</button>
+        <p class="uk-text-center uk-text-wrap uk-margin-small" id="password"></p>
+        <footer class="uk-text-center">
+            <a href="https://github.com/jgrobstein/nopass" rel="nofollow noopener" uk-icon="icon: github; ratio: 1.5"></a>
+        </footer>
     </content>
-    <footer>
-    </footer>
     <script src="nopass.js" type="module"></script>
 </body>
 </html>

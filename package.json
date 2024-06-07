@@ -1,13 +1,32 @@
 {
   "source": "src/index.html",
+  "targets": {
+      "frontend": {
+          "source": [
+              "src/index.html"
+          ],
+          "distDir": "build"
+      }
+  },
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "clean:build": "rd /S /Q build",
+    "clean:cache": "rd /S /Q .parcel-cache",
+    "clean:dist": "rd /S /Q dist",
+    "clean:modules": "rd /S /Q node_modules",
+    "clean": "npm run clean:cache && npm run clean:dist && npm run clean:build",
+    "reset": "npm run clean:modules && npm run clean:cache && npm run clean:dist && npm run clean:build"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.10.3",
+    "@parcel/service-worker": "^2.12.0",
     "@parcel/transformer-sass": "2.10.3",
+    "@parcel/transformer-webmanifest": "^2.10.3",
     "crypto-js": "^4.2.0",
     "parcel": "^2.10.3",
+    "sharp": "^0.31.3",
     "uikit": "^3.17.9"
   }
 }
