@@ -44,7 +44,7 @@ The project should be available at http://localhost:1234.
 
 #### Build for production
 
-To generate a production bundle of your project run `npm run build`, your build will be created in a `dist` directory.
+To generate a production bundle of your project run `npm run build`, your build will be created in a `build` directory and packaged in a `zip` archive in the project root.
 
 ## License
 
