@@ -15,6 +15,8 @@ A simple password manager alternative that eliminates the need to store password
 
 Enter a website and seed phrase, adjust the length and counter as desired and generate a unique password that can be regenerated at any time using a pure js function.
 
+**NoPass** is a simple PWA enabled client side application built in pure `html`, `css` and `javascript` bundled with [Parcel JS](). No data is ever stored, collected, or transmitted via the application. **NoPass** is an alternative to modern password managers allowing regeneration of secure passwords without the need to ever store any data on your device, or a cloud service.
+
 ## Screenshots
 
 ![Screenshot](src/imgs/screenshot-home.png)

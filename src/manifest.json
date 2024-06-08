@@ -39,15 +39,15 @@
   ],
   "screenshots" : [
     {
-      "src": "imgs/screenshot-home.png?as=webp&width=1575&height=984",
-      "sizes": "1873x979",
+      "src": "imgs/screenshot-home.png?as=webp&width=1600&height=984",
+      "sizes": "1600x984",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Homescreen"
     },
     {
-      "src": "imgs/screenshot-home-mobile.png?as=webp&width=720&height=1480",
-      "sizes": "720x1480",
+      "src": "imgs/screenshot-home-mobile.png?as=webp&width=750&height=1334",
+      "sizes": "750x1334",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Homescreen"
